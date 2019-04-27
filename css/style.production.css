@@ -1,0 +1,317 @@
+/*
+Colors used
+
+background color: #EEEFF0
+text color: #2b2b2b
+Primary color: #C70039
+Secondary color: #EF901D
+h2 color: #581845
+*/
+
+body {
+  background-color: white;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  /*sets font size to 16*/
+  line-height: 1.6;
+  /*sets line height to 1.6*/
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #C70039;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #581845;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+a {
+ color: #C70039;
+}
+
+a:visited {
+  /* visited link */
+  color: #301528;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  /* no underlining when hovering over a link */
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+a:active {
+  /* selected link will appear bolder */
+  color: #489c79;
+  text-decoration: none;
+}
+
+
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #C70039;
+  color: white !important;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 15px;
+  border-radius: 8px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition:0.2s opacity;
+  -o-transition:0.2s opacity;
+  transition:0.2s opacity;
+}
+
+
+.button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #C70039;
+  color: white !important;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 15px;
+  border-radius: 8px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition:0.2s opacity;
+  -o-transition:0.2s opacity;
+  transition:0.2s opacity;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  /* mouse will appear as hand when over the button */
+  cursor: pointer;
+  /* opacity will reduce to 80% when hovered over */
+  opacity: 0.8;
+}
+
+.button__secondary {
+  background-color: undefined;
+  color: undefined;
+}
+
+
+.navigation-list__item--active {
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid #301528;
+}
+
+.profile__portrait{
+  float: left;
+  width: 250px;
+  height: auto;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.page-header__item{
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+
+}
+
+.page-header__item:last-child {
+  flex-growth: 1;
+  text-align: right;
+}
+
+.page-footer {
+  clear:both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-me {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact {
+  max-width: 700px;
+  margin: 20px;
+}
+
+.work-page {
+  max-width: 700px;
+  margin: 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+/* Grid Fallback */
+
+.grid__item {
+  display: inline-block;
+  width: 33%;
+}
+
+/* Styling CSS Grid */
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 15px;
+}
+
+.grid__item {
+  background-color: #C2C0C2;
+  padding: 15px;
+  /* Set width to auto */
+  width: auto;
+}
+
+.grid__item:last-child {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-column-span: 0;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 2;
+  grid-row-end: 3;
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width:750px) {
+  /* Shared Code */
+    .grid {
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+@-webkit-keyframes color-change {
+    0% {
+      fill: #6c63ff;
+    }
+    100% {
+      fill: #C70039;
+    }
+  }
+
+@keyframes color-change {
+    0% {
+      fill: #6c63ff;
+    }
+    100% {
+      fill: #C70039;
+    }
+  }
+
+.fingerprint {
+  -webkit-animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
+}
+
+@-webkit-keyframes circle-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(-150px, 50px);
+            transform: translate(-150px, 50px);
+  }
+}
+
+@keyframes circle-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(-150px, 50px);
+            transform: translate(-150px, 50px);
+  }
+}
+
+.circle-rotate {
+  -webkit-animation: 4s circle-move infinite alternate linear;
+          animation: 4s circle-move infinite alternate linear;
+}

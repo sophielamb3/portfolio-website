@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sophie Lamb</title>
+  <link rel="shortcut icon" href="img/sophie-favicon.ico">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+  <body>
+<!-- Header including logo and the main nagivation -->
+    <header class="page-header">
+          <!--ADD YOUR LOGO HERE -->
+          <img src="img/SOPHIE.LAMB.LOGO.2.png"  alt="Personal logo of Sophie Lamb, a text logo in uppercase letters that consitits of my name." class="page-header__item" href="index.html">
+          <nav class="main-navigation page-header__item:last-child">
+            <ul role="menubar" class="navigation-list">
+              <li role="presentation">
+                <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+              </li>
+              <li role="presentation">
+                <a href="about-me.html" role="menuitem" class="navigation-list__item">About Me</a>
+              </li>
+              <li role="presentation">
+                <a href="contact.html" role="menuitem" class="navigation-list__item   navigation-list__item--active">Contact</a>
+              </li>
+              <li role="presentation">
+                <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+              </li>
+            </ul>
+          </nav>
+    </header>
+    <br>
+    <br>
+  <div class="contact">
+    <h1 style= "font-size:24px;"> Let's chat! </h1>
+  </div>
+  <div class="contact">
+    Sophie Lamb<br>
+    2, Shakespeare Meadows <br>
+   Repton, Derby<br>
+    DE65 6SB<br>
+    UNITED KINGDOM<br>
+    <br>
+    <strong>Telephone Number:</strong> <a href="tel:07963592088">07963592088</a><br>
+    <strong>Skype:</strong> <a href="skype:hello.careerfoundry">hello.careerfoundry</a><br>
+    <strong>Email:</strong> <a href="mailto:sophielamb3@outlook.com">sophielamb3@outlook.com</a>
+    <p>
+      <button type="button" href="mailto:sophielamb3@outlook.com">Contact Me</button>
+    </p>
+  </div>
+  <form action="" method="post" id="contact-form" class="contact">
+    <label class="standard-form" for="contact-email"> Email:*</label>
+      <input type="email" id="contact-email" required>
+      <br>
+    <label class="standard-form" for="contact-telephone"> Telephone: </label>
+      <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-telephone">
+      <br>
+    <label class="standard-form" for="contact-message"> Message:* Max lenght 240 characters</label>
+      <textarea maxlength="240" id="contact-message" required></textarea>
+      <br>
+    <input type="submit" value="send mesage">
+  </form>
+  <footer class="page-footer">
+    <p> Find me on </p>
+    <div class="social-media">
+      <img width="30" height="30" src="img/github_icon.svg" alt="Github">
+      <img width="30" height="30" src="img/twitter_square_icon.svg" alt="Twitter">
+      <img width="30" height="30" src="img/linkedin_logo.svg" alt="LinkedIn">
+    </div>
+  </footer>
+<script src="js/tota11y.min.js"></script>
+</body>
+</html>

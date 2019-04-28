@@ -165,6 +165,7 @@ button:focus,
 .contact {
   max-width: 700px;
   margin: 20px;
+  text-align: center;
 }
 
 .work-page {

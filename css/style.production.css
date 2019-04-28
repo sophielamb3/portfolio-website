@@ -180,7 +180,7 @@ button:focus,
 
 .contact {
   max-width: 700px;
-  margin: 20px;
+  margin: 0 auto;
   text-align: center;
 }
 

@@ -38,6 +38,7 @@ h3 {
 
 a {
   color: #c70039;
+  text-decoration: none;
 }
 
 a:visited {
@@ -77,8 +78,6 @@ button {
 
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 
@@ -100,8 +99,6 @@ button {
 
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 
@@ -136,11 +133,7 @@ button:focus,
 }
 
 .page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
   padding: 20px;
@@ -148,26 +141,17 @@ button:focus,
 }
 
 .page-header__item {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 200px;
   flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
   text-align: right;
 }
 
 .page-footer {
   clear: both;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
 }
@@ -175,6 +159,7 @@ button:focus,
 .profile {
   max-width: 700px;
   margin: 0 auto;
+  display: inline-block;
 }
 
 .about-me {
@@ -195,7 +180,6 @@ button:focus,
 }
 
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -218,9 +202,7 @@ button:focus,
 /* Styling CSS Grid */
 
 .grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   padding: 15px;
@@ -241,14 +223,12 @@ button:focus,
 
 @media all and (max-width: 500px) {
   .grid {
-    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
-    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -269,16 +249,6 @@ button:focus,
   }
 }
 
-@-webkit-keyframes color-change {
-  0% {
-    fill: #6c63ff;
-  }
-
-  100% {
-    fill: #c70039;
-  }
-}
-
 @keyframes color-change {
   0% {
     fill: #6c63ff;
@@ -290,35 +260,19 @@ button:focus,
 }
 
 .fingerprint {
-  -webkit-animation: 4s color-change infinite alternate linear;
   animation: 4s color-change infinite alternate linear;
-}
-
-@-webkit-keyframes circle-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(-150px, 50px);
-    transform: translate(-150px, 50px);
-  }
 }
 
 @keyframes circle-move {
   from {
-    -webkit-transform: translate(0, 50px);
     transform: translate(0, 50px);
   }
 
   to {
-    -webkit-transform: translate(-150px, 50px);
     transform: translate(-150px, 50px);
   }
 }
 
 .circle-rotate {
-  -webkit-animation: 4s circle-move infinite alternate linear;
   animation: 4s circle-move infinite alternate linear;
 }

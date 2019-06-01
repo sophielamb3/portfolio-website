@@ -46,21 +46,25 @@
       <button type="button" href="mailto:sophielamb3@outlook.com">Contact Me</button>
     </p>
   </div>
+
   <form action="" method="post" id="contact-form" class="contact">
-    <label class="standard-form" for="contact-email"> Email:*</label>
-      <input type="email" id="contact-email" required>
-      <br>
-      <br>
-    <label class="standard-form" for="contact-telephone"> Telephone: </label>
-      <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-telephone">
-      <br>
-      <br>
-    <label class="standard-form" for="contact-message"> Message:* Max lenght 240 characters</label>
-      <textarea maxlength="240" id="contact-message" required></textarea>
-      <br>
-      <br>
-    <input type="submit" value="send mesage">
+    <div class="input-wrapper">
+      <label class="standard-form" for="contact-email"> Email:*</label>
+        <input type="email" id="contact-email" required>
+        <br>
+        <br>
+      <label class="standard-form" for="contact-telephone"> Telephone: </label>
+        <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-telephone" required>
+        <br>
+        <br>
+      <label class="standard-form" for="contact-message"> Message:* Max lenght 240 characters</label>
+        <textarea maxlength="240" id="contact-message" required></textarea>
+        <br>
+        <br>
+      <input type="submit" value="send mesage">
+    </div>
   </form>
+
   <footer class="page-footer">
     <p> Find me on </p>
     <div class="social-media">
@@ -69,6 +73,6 @@
       <img width="30" height="30" src="img/linkedin_logo.svg" alt="LinkedIn">
     </div>
   </footer>
-<script src="js/tota11y.min.js"></script>
+  <script> src="js/scripts.js"></script>
 </body>
 </html>

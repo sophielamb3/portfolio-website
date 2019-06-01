@@ -173,6 +173,20 @@ button:focus,
   text-align: center;
 }
 
+.input-wrapper {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  min-width: 75px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+}
+
 .work-page {
   max-width: 700px;
   margin: 20px;

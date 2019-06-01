@@ -21,14 +21,14 @@
   }
 
   function validateEmail() {
-    var value = $emailInput.value:
+    var value = $emailInput.value
 
     if (!value){
       showErrorMessage($emailInput, 'Email is a required field.');
       return false;
     }
 
-    if value.indexOf('@') === -1 {
+    if (value.indexOf('@') === -1) {
       showErrorMessage($emailInput, 'You must enter a valid email address.');
       return false;
     }
